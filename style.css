@@ -1,0 +1,56 @@
+body {
+  margin: 0;
+  font-family: Helvetica, Arial, sans-serif;
+  background: #fff;
+  color: #111;
+}
+
+header {
+  padding: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #111;
+  font-size: 14px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+  padding: 40px;
+}
+
+.project {
+  border: 1px solid #eee;
+  border-radius: 6px;
+  overflow: hidden;
+  transition: 0.2s;
+}
+
+.project:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+
+.project img {
+  width: 100%;
+  display: block;
+}
+
+.project-title {
+  padding: 15px;
+  font-size: 15px;
+  font-weight: bold;
+}
